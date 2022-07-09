@@ -1,5 +1,6 @@
 import React from 'react';
 import NotesHeader from './notes-header';
+import NotesMain from './notes-main';
 import { getInitialData } from '../utils/index';
 
 class NotesApp extends React.Component {
@@ -16,7 +17,7 @@ class NotesApp extends React.Component {
     return (
       <React.Fragment>
         <NotesHeader />
-        <main></main>
+        <NotesMain />
       </React.Fragment>
     );
   }
