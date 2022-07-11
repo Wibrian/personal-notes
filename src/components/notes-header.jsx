@@ -1,13 +1,8 @@
 import React from 'react';
+import Header from './utils/header';
 
 function NotesHeader() {
-  return (
-    <nav>
-      <header>
-        <h1>Personal Notes</h1>
-      </header>
-    </nav>
-  );
+  return <Header name='Personal Notes' />;
 }
 
 export default NotesHeader;
