@@ -52,7 +52,8 @@ class NotesApp extends React.Component {
   onDeleteNoteEventHandler(id) {
     const deleteNote = this.state.notes.filter((note) => note.id !== id);
     this.setState({
-      filteredNotes: deleteNote
+      filteredNotes: deleteNote,
+      notes: deleteNote
     });
   }
 
@@ -66,7 +67,8 @@ class NotesApp extends React.Component {
       });
 
       return {
-        filteredNotes: notes
+        filteredNotes: notes,
+        notes: notes
       };
     });
   }
